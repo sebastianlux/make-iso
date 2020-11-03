@@ -1,0 +1,66 @@
+ {
+        "manifestVersion": 1,
+        "id": "make-iso",
+        "version": "0.1.0",
+        "name": "Make ISO",
+        "author": "Sebastian Lux",
+        "description": "Team Foundation Build (TFBuild) task to make ISO images during build",
+        "publisher": "SebastianLux",
+        "galleryFlags": [
+        "Preview"
+    ],
+        "targets": [
+            {
+                "id": "Microsoft.VisualStudio.Services"
+                }
+            ],
+        "categories": [
+            "Build and release"
+        ],
+        "tags": [
+            "build",
+            "continuous delivery",
+            "release",
+            "task"
+        ],
+        "icons": {
+            "default": "img/extension-icon.png"
+        },
+        "content": {
+            "details": {
+                "path": "README.md"
+            }
+        },
+        "links":{
+            "home": {
+                "uri": "https://tfs.sartorius.com"
+            },
+            "support": {
+                "uri": "sebastian.lux@sartorius.com"
+            },
+            "issues": {
+                "uri": "sebastian.lux@sartorius.com"
+            }
+        },
+        "contributions": [
+            {
+            "id": "make-iso-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "task"
+                }
+            }
+        ],
+        "scopes": [],
+        "files": [
+            {
+                "path": "img", "addressable": true
+            },
+            {
+                "path": "task", "addressable": true
+            }
+        ]
+ }

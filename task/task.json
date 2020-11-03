@@ -1,0 +1,39 @@
+﻿{
+    "id":  "a4efc301-b573-4608-9338-e4e9c3122727",
+    "name":  "Make ISO",
+    "friendlyName":  "Make ISO",
+    "description":  "Make an iso image during build",
+    "author":  "Sebastian Lux",
+    "category":  "Build",
+    "version":  {
+                    "Major":  0,
+                    "Minor":  1,
+                    "Patch":  0
+                },
+    "instanceNameFormat":  "Update $(filePattern) files: $(rootFolder)",
+    "inputs":  [
+         {
+                       "name":  "sourceFolder",
+                       "type":  "string",
+                       "label":  "Source folder",
+                       "defaultValue":  "",
+                       "required":  true,
+                       "helpMarkDown":  ""
+                   },     
+                   {
+                       "name":  "output",
+                       "type":  "string",
+                       "label":  "Output",
+                       "defaultValue":  "",
+                       "required":  true,
+                       "helpMarkDown":  "The output file full path"
+                   }                  
+               ],
+    "execution":  {
+                      "PowerShell":  {
+                                         "target":  "$(currentDirectory)\\make-iso.ps1",
+                                         "argumentFormat":  "",
+                                         "workingDirectory":  ""
+                                     }
+                  }
+}
